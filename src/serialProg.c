@@ -20,7 +20,7 @@ typedef struct termios term;
 //TCP port whitelist
 //Placeholder for now since i dont have much of an idea of what 
 //it would looks like in action
-int TCPList[4001, 4018, 4200, 4840, 6005, 6464, 4090, 4093];
+int TCPList[] = {4001, 4018, 4200, 4840, 6005, 6464, 4090, 4093};
 
 int parseArgs(int argc, char *argv[], uint *configs)
 {
@@ -208,7 +208,7 @@ int main (int argc, char *argv[])
     parseArgs(argc, argv, Pconfigs);
 
     //check the tcp port
-    verifyTCP(configs[0]);
+    //verifyTCP(configs[0]);
 
     //set port settings
     SetTerminal(SerialTerminal, SerialPort, configs);
