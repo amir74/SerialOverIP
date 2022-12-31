@@ -11,3 +11,5 @@ Compilation and testing is done through using the generated compiler from the sd
 1. with the use of patches expand and hook up the pkg with the LuCi ui 
 2. add the ui files to the package manifest
 3. get comfortable with the dev cycle using packaging and quilt patches
+4. LuCi Ui will get packaged and deployed seperately in order to provide web interface control
+5. all parameters get passed onto an uci config file which will get changed through the web ui
